@@ -20,8 +20,14 @@ pipeline{
                 }
             }
 
-            
-            
-
+            stage('pushing the image to docker hub'){
+                steps { 
+                    script { 
+                        docker.withRegistry( '', registryCredential ) { 
+                            dockerImage.push() 
+                        }
+                    } 
+                }   
+            }
         }
 }
