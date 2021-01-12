@@ -4,7 +4,7 @@ pipeline{
         registryCredential = 'sharifdocker123-ansarbasha786'
         dockerImage = ''
     }
-    agent none {
+    agent {
         stages{
             stage('build'){
                 steps{
