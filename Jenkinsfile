@@ -1,7 +1,7 @@
 pipeline{
     environment { 
         registry = "sharifdocker123/docker-jenkins-integration-sample" 
-        registryCredential = 'sharifdocker123-ansarbasha786'
+        registryCredential = 'ansarbasha786'
         dockerImage = ''
     }
     agent any
