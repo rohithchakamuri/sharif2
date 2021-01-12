@@ -1,6 +1,6 @@
 pipeline{
     environment { 
-        registry = "sharifdocker123/docker-jenkins-integration-sample" 
+        registry = "sharifdocker123/docker-jenkins-integration" 
         registryCredential = 'eb4e11c9-1c5b-46c8-85f9-4fec06036ac2'
         dockerImage = ''
     }
