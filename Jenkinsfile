@@ -12,6 +12,18 @@ pipeline{
                 }
             }
 
+            stage('Checking the branch') {
+                when {
+                    expression {
+                        BRANCH_NAME == 'master'
+                    }
+                }
+
+                steps {
+                    echo 'master'
+                }
+            }
+
             stage('Building image') {
                 steps{
                     script {
